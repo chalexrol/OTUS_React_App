@@ -1,5 +1,3 @@
-/* eslint-disable no-unused-vars */
-// eslint-disable-next-line no-unused-vars
 import React, { Component } from 'react'
 import './App.css'
 import './w3.css'
@@ -34,19 +32,19 @@ class App extends Component {
         <div key="cont001" className= "w3-sidebar w3-green w3-bar-block">
           <h2> Погода </h2>
 
-          {this.state.places.map((place, index) => (
+          {this.state.places.map((place, zip) => (
 
             <button
               className="w3-bar-item w3-button tablink"
-              key={index}
+              key={zip}
               onClick={() => {
                 this.setState({
-                  activePlace: index,
+                  activePlace: zip,
                   addPlace: 0
                 })
               }}
             >
-              {place.name}
+              {place.city}
             </button>
 
           ))}

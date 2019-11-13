@@ -1,5 +1,8 @@
 import React, { Component } from 'react'
 
+
+
+
 export class ShowWeather extends Component {
   constructor (props) {
     super(props)
