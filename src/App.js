@@ -50,7 +50,7 @@ class App extends Component {
           ))}
 
           <button
-            className="w3-bar-item w3-button tablink"
+            className="w3-text-blue w3-grey w3-bar-item w3-button tablink "
             key= "addPlace"
             onClick={() => {
               this.setState({ addPlace: 1 })
@@ -60,7 +60,9 @@ class App extends Component {
           </button>
         </div>
 
-        {(this.state.addPlace === 0)
+
+
+         {(this.state.addPlace === 0)
           ? <ShowWeather
             className="w3-container"
             key = {activePlace}
@@ -70,7 +72,7 @@ class App extends Component {
             onPlaceSubmit={this.handlePlaceSubmit}
           />
 
-        }
+        } 
 
       </div>
 

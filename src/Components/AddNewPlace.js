@@ -3,7 +3,10 @@ import React, { Component } from 'react'
 export class AddNewPlace extends Component {
   constructor (props) {
     super(props)
-    this.state = {city:'', zip: ''};
+    this.state = {
+      city:'',
+       zip: ''
+    };
 
     this.handlePlaceSubmit = this.handlePlaceSubmit.bind(this)
     this.handleChange = this.handleChange.bind(this);
